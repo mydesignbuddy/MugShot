@@ -4,7 +4,7 @@ using System.Linq;
 using System.IO;
 using System.Drawing;
 using System.Drawing.Imaging;
-using MugShot.Lib.MetaData;
+using MugShot.Lib.MetaDataReaders;
 
 namespace MugShot.Lib.Sources
 {
@@ -69,7 +69,7 @@ namespace MugShot.Lib.Sources
                             System.Text.ASCIIEncoding encoding = new System.Text.ASCIIEncoding();
                             string manufacturer = encoding.GetString(propItems[1].Value);
 
-                            ImageParser parser = new ImageParser();
+                            ImageReader parser = new ImageReader();
                             Object bmpObj = (object) image;
                             foreach (var s in parser.Parse(ref bmpObj))
                             {

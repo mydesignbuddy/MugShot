@@ -68,10 +68,6 @@
       <Project>{4AF1193A-207E-43D0-B8C9-2904E2D9F845}</Project>
       <Name>MugShot.Lib</Name>
     </ProjectReference>
-    <ProjectReference Include="..\MugShot.Utilities\MugShot.Utilities.csproj">
-      <Project>{0B2B0343-F7BA-4114-9687-0166743D0905}</Project>
-      <Name>MugShot.Utilities</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="NLog.config">

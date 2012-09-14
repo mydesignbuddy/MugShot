@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
@@ -7,7 +7,7 @@ using System.IO;
 using System.Reflection;
 using System.Text;
 
-namespace MugShot.Utilities.Exif
+namespace MugShot.Lib.MetaDataReaders.Exif
 {
     /// <summary>
     /// Reader Class

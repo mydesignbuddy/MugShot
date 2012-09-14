@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace MugShot.Utilities.Exif
+namespace MugShot.Lib.MetaDataReaders.Exif
 {
     //
     // dont touch this class. its for IEnumerator

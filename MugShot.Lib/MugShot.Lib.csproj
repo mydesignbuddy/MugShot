@@ -78,6 +78,9 @@
     <Compile Include="Media\GifMedia.cs" />
     <Compile Include="Media\IMedia.cs" />
     <Compile Include="Media\JpegMedia.cs" />
+    <Compile Include="MetaDataReaders\Exif\Properties.cs" />
+    <Compile Include="MetaDataReaders\Exif\Reader.cs" />
+    <Compile Include="MetaDataReaders\Exif\ReaderEnumerator.cs" />
     <Compile Include="MetaDataReaders\ImageReader.cs" />
     <Compile Include="MetaDataReaders\IMetaDataReader.cs" />
     <Compile Include="Sources\FtpSource.cs" />
@@ -98,12 +101,6 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\MugShot.Utilities\MugShot.Utilities.csproj">
-      <Project>{0B2B0343-F7BA-4114-9687-0166743D0905}</Project>
-      <Name>MugShot.Utilities</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\nuget.targets" />

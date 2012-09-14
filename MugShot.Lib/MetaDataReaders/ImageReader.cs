@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using MugShot.Utilities.Exif;
+using MugShot.Lib.MetaDataReaders.Exif;
 
 namespace MugShot.Lib.MetaDataReaders
 {
@@ -13,7 +13,7 @@ namespace MugShot.Lib.MetaDataReaders
         public ArrayList Parse(ref object image)
         {
             Bitmap bmp = (Bitmap) image;
-            MugShot.Utilities.Exif.Reader exif = new MugShot.Utilities.Exif.Reader(ref bmp);
+            Reader exif = new Reader(ref bmp);
             return GetExifKvp(exif);
         }
 
@@ -22,7 +22,7 @@ namespace MugShot.Lib.MetaDataReaders
             throw new NotImplementedException();
         }
 
-        private ArrayList GetExifKvp(MugShot.Utilities.Exif.Reader exif)
+        private ArrayList GetExifKvp(Reader exif)
         {
             ArrayList kvp = new ArrayList();
             foreach (KeyValuePair<string, string> s in exif)

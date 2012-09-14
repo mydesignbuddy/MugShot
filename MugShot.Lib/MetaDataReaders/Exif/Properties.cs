@@ -1,7 +1,7 @@
 using System;
 using System.Collections;
 
-namespace MugShot.Utilities.Exif
+namespace MugShot.Lib.MetaDataReaders.Exif
 {
     /// <summary>
     /// Summary description for Properties.

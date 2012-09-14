@@ -1,31 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace MugShot.Lib.MediaTypes
+namespace MugShot.Lib.Media
 {
-    public class Png : MediaType, IMediaType
+    public class Png : ImageMedia, IMedia
     {
-        public String Name
+        public new String Name
         {
             get { return "PNG Image"; }
         }
 
-        public String Description 
+        public new String Description 
         {
             get { return "Portable Network Graphics - Very common image format"; }
         }
 
-        public String[] FileExtensions
+        public new String[] FileExtensions
         {
             get
             {
                 return new string[] { "png" };
             }
-        }
-
-        public bool ExtractMetaData()
-        {
-            throw new NotImplementedException();
         }
     }
 }

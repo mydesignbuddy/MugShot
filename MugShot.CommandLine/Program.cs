@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Text;
-using MugShot.Lib.SourcesTypes;
+using Args;
+using MugShot.Lib.Sources;
 
 namespace MugShot.CommandLine
 {
@@ -9,7 +10,7 @@ namespace MugShot.CommandLine
         static void Main(string[] args)
         {
 
-            var fs = new DirectoryScanner {RecursiveLevel = 3};
+            var fs = new LocalFilesystemSource {RecursiveLevel = 3};
 
             //fs.Scan(@"C:\web\php");
             fs.Scan(@"G:\projects\MugShot\MugShot.CommandLine\test_photos");

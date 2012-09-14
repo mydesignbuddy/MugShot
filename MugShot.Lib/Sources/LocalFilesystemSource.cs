@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.IO;
@@ -7,9 +6,9 @@ using System.Drawing;
 using System.Drawing.Imaging;
 using MugShot.Lib.MetaData;
 
-namespace MugShot.Lib.SourcesTypes
+namespace MugShot.Lib.Sources
 {
-    public class DirectoryScanner
+    public class LocalFilesystemSource
     {
         // How much deep to scan. (of course you can also pass it to the method)
         public string[] FileTypes = new string[7];
@@ -17,8 +16,9 @@ namespace MugShot.Lib.SourcesTypes
         public int TotalFilesFound = 0;
         public int TotalValidFilesFound = 0;
         public int TotalDirectoriesFound = 0;
+        public int RecursiveLevel { get; set; }
 
-        public DirectoryScanner()
+        public LocalFilesystemSource()
         {
             //init set of types
             FileTypes[0] = ".jpg";
@@ -30,7 +30,6 @@ namespace MugShot.Lib.SourcesTypes
             FileTypes[6] = ".bmp";
         }
 
-        public int RecursiveLevel { get; set; }
 
         public void Scan(string sourceDir)
         {

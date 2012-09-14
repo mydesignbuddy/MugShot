@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Drawing;
 
-namespace MugShot.Lib.MetaData
+namespace MugShot.Lib.MetaDataReaders
 {
-    interface IMetaDataParser
+    interface IMetaDataReader
     {
         ArrayList Parse(ref object obj);
         ArrayList Parse(string filePath);

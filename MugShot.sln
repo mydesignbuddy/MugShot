@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MugShot.Lib", "MugShot.Lib\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MugShot.Web", "MugShot.Web\MugShot.Web.csproj", "{86EBF1D5-DF9B-49BD-809D-6A5FC8DA19FD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MugShot.Service", "MugShot.Service\MugShot.Service.csproj", "{FFAE6101-8FEC-4DDF-A01D-825105CEEE18}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +61,16 @@ Global
 		{86EBF1D5-DF9B-49BD-809D-6A5FC8DA19FD}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{86EBF1D5-DF9B-49BD-809D-6A5FC8DA19FD}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{86EBF1D5-DF9B-49BD-809D-6A5FC8DA19FD}.Release|x86.ActiveCfg = Release|Any CPU
+		{FFAE6101-8FEC-4DDF-A01D-825105CEEE18}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{FFAE6101-8FEC-4DDF-A01D-825105CEEE18}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{FFAE6101-8FEC-4DDF-A01D-825105CEEE18}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{FFAE6101-8FEC-4DDF-A01D-825105CEEE18}.Debug|x86.ActiveCfg = Debug|x86
+		{FFAE6101-8FEC-4DDF-A01D-825105CEEE18}.Debug|x86.Build.0 = Debug|x86
+		{FFAE6101-8FEC-4DDF-A01D-825105CEEE18}.Release|Any CPU.ActiveCfg = Release|x86
+		{FFAE6101-8FEC-4DDF-A01D-825105CEEE18}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{FFAE6101-8FEC-4DDF-A01D-825105CEEE18}.Release|Mixed Platforms.Build.0 = Release|x86
+		{FFAE6101-8FEC-4DDF-A01D-825105CEEE18}.Release|x86.ActiveCfg = Release|x86
+		{FFAE6101-8FEC-4DDF-A01D-825105CEEE18}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

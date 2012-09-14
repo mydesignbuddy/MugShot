@@ -6,9 +6,9 @@ using System.Linq;
 using System.Text;
 using MugShot.Utilities.Exif;
 
-namespace MugShot.Lib.MetaData
+namespace MugShot.Lib.MetaDataReaders
 {
-    class ImageParser : IMetaDataParser
+    class ImageReader : IMetaDataReader
     {
         public ArrayList Parse(ref object image)
         {

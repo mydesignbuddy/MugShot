@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 
-namespace MugShot.Lib.MediaTypes
+namespace MugShot.Lib.Media
 {
-    public interface IMediaType
+    public interface IMedia
     {
         String Name { get;}
         String Description { get; }

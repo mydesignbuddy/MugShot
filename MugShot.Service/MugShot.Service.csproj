@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{6FF5ABCA-E9A5-4C91-9690-B1A309516282}</ProjectGuid>
+    <ProjectGuid>{FFAE6101-8FEC-4DDF-A01D-825105CEEE18}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MugShot.CommandLine</RootNamespace>
-    <AssemblyName>MugShot.CommandLine</AssemblyName>
+    <RootNamespace>MugShot.Service</RootNamespace>
+    <AssemblyName>MugShot.Service</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
@@ -36,42 +36,22 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Args">
-      <HintPath>..\packages\Args.1.0.4\lib\Net40\Args.dll</HintPath>
+    <Compile Include="Program.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.0\lib\net40-client\log4net.dll</HintPath>
     </Reference>
     <Reference Include="NLog">
       <HintPath>..\packages\NLog.2.0.0.2000\lib\net40\NLog.dll</HintPath>
     </Reference>
-    <Reference Include="nunit.framework">
-      <HintPath>..\packages\NUnit.2.6.0.12054\lib\nunit.framework.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="NUnitSampleTests.cs" />
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="test_photos\ClayShoot0001.JPG" />
-    <Content Include="test_photos\ClayShoot0002.JPG" />
-    <Content Include="test_photos\ClayShoot0003.JPG" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\MugShot.Lib\MugShot.Lib.csproj">
-      <Project>{4AF1193A-207E-43D0-B8C9-2904E2D9F845}</Project>
-      <Name>MugShot.Lib</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MugShot.Utilities\MugShot.Utilities.csproj">
-      <Project>{0B2B0343-F7BA-4114-9687-0166743D0905}</Project>
-      <Name>MugShot.Utilities</Name>
-    </ProjectReference>
+    <Reference Include="Topshelf">
+      <HintPath>..\packages\Topshelf.2.3.0.0\lib\NET40\Topshelf.dll</HintPath>
+    </Reference>
+    <Reference Include="Topshelf.NLogIntegration">
+      <HintPath>..\packages\Topshelf.NLog.2.3.0.0\lib\NET40\Topshelf.NLogIntegration.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="NLog.config">
@@ -82,6 +62,12 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MugShot.Lib\MugShot.Lib.csproj">
+      <Project>{4AF1193A-207E-43D0-B8C9-2904E2D9F845}</Project>
+      <Name>MugShot.Lib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\nuget.targets" />

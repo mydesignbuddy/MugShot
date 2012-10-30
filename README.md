@@ -11,5 +11,6 @@ It will contain a the following subprojects:
   1. Mobile web interface (HTML5)
   
 Possible subprojects:
+  1. Mobile Client (Monotouch/Mono for Android/Windows Mobile)
   1. Desktop Client
   1. Photo editor web-based and/or Desktop app
